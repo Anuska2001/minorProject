@@ -12,6 +12,7 @@ import Register from './components/presentation/register';
 import AboutUs from './components/presentation/aboutUs';
 import Contacts from './components/presentation/contact';
 import Education from './components/presentation/education';
+import Experience from './components/presentation/experience';
 import Finalize from  './components/presentation/finalizePage';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
 
      <Switch>
           <Route path="/education" component={Education}></Route>
+          <Route path="/experience" component={Experience}></Route>    
           <Route path="/contact" component={Contacts}></Route>
           <Route path="/getting-started" component={GettingStarted}></Route>
           <Route path="/resume-templates" component={GettingStarted}></Route>

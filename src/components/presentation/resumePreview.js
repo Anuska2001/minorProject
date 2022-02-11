@@ -16,6 +16,14 @@ function ResumePreview(props){
         return '';
     }
 
+    const rvExperience=(key,valToAppend)=>{
+        if(props.experienceSection){
+            return props.experienceSection[key]?props.experienceSection[key]+
+            (valToAppend?valToAppend:''):'';
+        }
+    }
+
+
         return (
             <div className={props.skinCd + " resume-preview "}>
                 <div className={'name-section'}>
@@ -40,6 +48,15 @@ function ResumePreview(props){
                      <p>{rvEducation(fieldCd.GraduationCGPA)}</p>
                      <p>{rvEducation(fieldCd.GraduationDate)}</p>
                      <p>{rvEducation(fieldCd.GraduationYear)}</p>
+                </div>
+
+                <div className={'educationSection text-upper'}>                   
+                    <p className="heading bold">Work Experience</p>
+                     <div className={'divider'}></div>
+                     <p>{rvExperience(fieldCd.JobLocation)}</p>
+                     <p>{rvExperience(fieldCd.JobDescription)}</p>
+                     <p>{rvExperience(fieldCd.JobStartDate)}</p>
+                     <p>{rvExperience(fieldCd.JobEndDate)}</p>
                 </div>
           
             </div>

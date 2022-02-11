@@ -32,7 +32,7 @@ function Education(props) {
      else{
        props.setEducation(education)
      }
-     history.push('/finalize')
+     history.push('/experience')
   }
 
     
