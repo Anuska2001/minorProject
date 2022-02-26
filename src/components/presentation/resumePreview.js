@@ -22,6 +22,12 @@ function ResumePreview(props){
             (valToAppend?valToAppend:''):'';
         }
     }
+    const rvSkill=(key,valToAppend)=>{
+        if(props.skillSection){
+            return props.skillSection[key]?props.skillSection[key]+
+            (valToAppend?valToAppend:''):'';
+        }
+    }
 
 
         return (
@@ -57,6 +63,14 @@ function ResumePreview(props){
                      <p>{rvExperience(fieldCd.JobDescription)}</p>
                      <p>{rvExperience(fieldCd.JobStartDate)}</p>
                      <p>{rvExperience(fieldCd.JobEndDate)}</p>
+                </div>
+                <div className={'educationSection text-upper'}>                   
+                    <p className="heading bold">Skills & Achievements</p>
+                     <div className={'divider'}></div>
+                     <p>{rvSkill(fieldCd.Skills)}</p>
+                     <p>{rvSkill(fieldCd.Certi1)}</p>
+                     <p>{rvSkill(fieldCd.Certi2)}</p>
+                     <p>{rvSkill(fieldCd.Certi3)}</p>
                 </div>
           
             </div>

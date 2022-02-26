@@ -14,6 +14,7 @@ import Contacts from './components/presentation/contact';
 import Education from './components/presentation/education';
 import Experience from './components/presentation/experience';
 import Finalize from  './components/presentation/finalizePage';
+import Skill from './components/presentation/skills';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
 
      <Switch>
           <Route path="/education" component={Education}></Route>
+          <Route path="/skill" component={Skill}></Route>
           <Route path="/experience" component={Experience}></Route>    
           <Route path="/contact" component={Contacts}></Route>
           <Route path="/getting-started" component={GettingStarted}></Route>

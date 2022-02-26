@@ -8,6 +8,7 @@ import { connect } from "react-redux";
     let educationSection= props.educationSection
     let contactSection=props.contactSection
     let experienceSection = props.experienceSection
+    let skillSection = props.skillSection
     let document=props.document
   
     const saveToDatabase= async()=>{
@@ -34,7 +35,9 @@ import { connect } from "react-redux";
       <div className="container full finalize-page" >
       <div className="funnel-section ">
           <div className="finalize-preview-card " id="resumePreview">
-            <ResumePreview contactSection={contactSection} educationSection={educationSection} experienceSection={experienceSection} skinCd={props?.document?.skinCd}></ResumePreview>   
+            <ResumePreview contactSection={contactSection} educationSection={educationSection} experienceSection={experienceSection} 
+            skillSection={skillSection} skinCd={props?.document?.skinCd}>
+              </ResumePreview>   
           </div>
           <div className="finalize-settings center">            
 

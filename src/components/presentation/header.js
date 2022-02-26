@@ -28,11 +28,14 @@ const Header = (props) => {
   return (  
   <header className="header">
   <nav className="nav">
-      <a href="/" className="holder-logo">
-        <img className='logo' src={logo}></img>
-      </a> 
+       
         <div className="header-links full-height">
 
+        <li className="home ">
+              <NavLink className="  " to="/">
+               Home 
+              </NavLink>
+            </li>
         {/* { isLoaded(auth) && !isEmpty(auth) ?<> */}
 
           <ul>

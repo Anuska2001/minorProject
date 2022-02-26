@@ -5,16 +5,16 @@
     padding: 1%;
     border: none;
     position: relative;
-    background: linear-gradient(45deg, #1DBFAF 0, #1EAEDB 85%, #1EAEDB 100%);
+    background: linear-gradient(45deg, #1c3634 0, #477583 85%, #49badd 100%);
     color: white;
 
     &:hover {
         color: black;
         background: white;
-        border: 2px solid #5ae4ce;
+        border: 2px solid #074b3f;
     }
     &.small{
-        border: 2px solid #5ae4ce;
+        border: 2px solid #84dacb;
     padding: 7px !important;
     border-radius: 0.6rem;
     }

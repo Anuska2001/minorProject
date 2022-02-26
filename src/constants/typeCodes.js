@@ -28,6 +28,10 @@ export const fieldCd = {
     JobStartDate: "JSTD",
     JobState: "JSTA",
     JobTitle: "JTIT",
+    Skills: "SKI",
+    Certi1: "C1",
+    Certi2: "C2",
+    Certi3: "C3",
     
     Location: "LOCN",
     SchoolCity: "SCIT",

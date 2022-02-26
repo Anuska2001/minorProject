@@ -33,7 +33,7 @@ function Experience(props) {
      else{
        props.setExperience(experience)
      }
-     history.push('/finalize')
+     history.push('/skill')
   }
 
     

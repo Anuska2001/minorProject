@@ -9,3 +9,6 @@ export const UPDATE_EDUCATION = "UPDATE_EDUCATION";
 
 export const SET_EXPERIENCE = "SET_EXPERIENCE";
 export const UPDATE_EXPERIENCE = "UPDATE_EXPERIENCE";
+
+export const SET_SKILL = "SET_SKILL";
+export const UPDATE_SKILL = "UPDATE_SKILL";
